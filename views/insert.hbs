@@ -1,0 +1,25 @@
+<form action="/mahasiswa" method="post">
+
+  <div>
+    <label for='nama'>Name:</label>
+    <input type="text" name="nama" />
+  </div>
+
+  <div>
+    <label for='age'>Age:</label>
+    <input type="text" name="age" />
+  </div>
+
+  <div class="button">
+      <button type="submit">Send your Massage</button>
+  </div>
+
+</form>
+
+<div>
+  <ul>
+    {{#each data}}
+      <li>{{name}} - {{age}}
+    {{/each}}
+  </ul>
+</div>
